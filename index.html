@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>5-DAYS Weather Forecast</h1>
+    <div class="container1">
+        <div class="main">
+            <div><label for="cityInput"><h2>Enter a City Name</h2></label></div>
+            <div><input type="text" id="cityInput" name="cityInput" placeholder="Eg. Tokyo, London, etc..."></div>
+            <div><button type="button">Search</button></div>
+        </div>
+        <div class="card" id="day1">
+            <div class="wrapper">
+            <h2>DAY-1 : <span id="date1">(__/__/____)</span> (Today)</h2>
+            <ul>
+            <li><h3>Place : <span id="place1">(_____)</span></h3></li>
+            <li>Temperature : <span id="temp1">(___)</span> &deg; C</li>
+            <li>Wind Speed : <span id="wind1">(___)</span> m/s</li>
+            <li>Humidity : <span id="humdity1">(___)</span> %</li>
+            </ul>
+            </div>
+            <div class="image">
+                <img src="" alt="">
+                <p id="description1"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">    
+        <div class="card next" id="day2">
+            <h2 id="day2h2" class="h2">DAY-2</h2>
+            <h3 id="day2h3" class="h3"><span id="date2">(__/__/____)</span></h3>
+            <ul id="day2ul" class="notActive ul">
+                <li>Temperature : <span id="temp2">(___)</span> &deg; C</li>
+                <li>Wind Speed : <span id="wind2">(___)</span> m/s</li>
+                <li>Humidity : <span id="humdity2">(___)</span> %</li>
+                <li><img src="" id="image2" alt=""></li>
+                <li><p id="description2"></p></li>
+            </ul>
+        </div>
+        <div class="card next" id="day3">
+            <h2 id="day3h2" class="h2">DAY-3</h2>
+            <h3 id="day3h3" class="h3"><span id="date3">(__/__/____)</span></h3>
+            <ul  id="day3ul" class="notActive ul">
+                <li>Temperature : <span id="temp3">(___)</span> &deg; C</li>
+                <li>Wind Speed : <span id="wind3">(___)</span> m/s</li>
+                <li>Humidity : <span id="humdity3">(___)</span> %</li>
+                <li><img src="" id="image3" alt=""></li>
+                <li><p id="description3"></p></li>
+            </ul>
+        </div>
+        <div class="card next" id="day4">
+            <h2 id="day4h2" class="h2">DAY-4</h2>
+            <h3 id="day4h3" class="h3"><span id="date4">(__/__/____)</span></h3>
+            <ul id="day4ul" class="notActive ul">
+                <li>Temperature : <span id="temp4">(___)</span> &deg; C</li>
+                <li>Wind Speed : <span id="wind4">(___)</span> m/s</li>
+                <li>Humidity : <span id="humdity4">(___)</span> %</li>
+                <li><img src="" id="image4" alt=""></li>
+                <li><p id="description4"></p></li>
+            </ul>
+        </div>
+        <div class="card next" id="day5">
+            <h2 id="day5h2" class="h2">DAY-5</h2>
+            <h3 id="day5h3" class="h3"><span id="date5">(__/__/____)</span></h3>
+            <ul id="day5ul" class="notActive ul">
+                <li>Temperature : <span id="temp5">(___)</span> &deg; C</li>
+                <li>Wind Speed : <span id="wind5">(___)</span> m/s</li>
+                <li>Humidity : <span id="humdity5">(___)</span> %</li>
+                <li><img src="" id="image5" alt=""></li>
+                <li><p id="description5"></p></li>
+            </ul>
+        </div>
+        <div class="card next" id="day6">
+            <h2 id="day6h2" class="h2">DAY-6</h2>
+            <h3 id="day6h3" class="h3"><span id="date6">(__/__/____)</span></h3>
+            <ul id="day6ul" class="notActive ul">
+                <li>Temperature : <span id="temp6">(___)</span> &deg; C</li>
+                <li>Wind Speed : <span id="wind6">(___)</span> m/s</li>
+                <li>Humidity : <span id="humdity6">(___)</span> %</li>
+                <li><img src="" id="image6" alt=""></li>
+                <li><p id="description6"></p></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
